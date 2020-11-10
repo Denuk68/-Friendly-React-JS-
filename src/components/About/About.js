@@ -1,7 +1,15 @@
 import React from 'react'
 import './About.css'
 
-export default function About() {
+// Owl-carousel
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
+
+
+export default function About() {  
     return (
         <>
         <section className="hero">
@@ -58,12 +66,17 @@ export default function About() {
                 <div className="block2__top">
                     <h2>All app screens</h2>
                 </div>
-                <div className="block2__bottom owl-carousel owl-theme">
-                    <div><img src="img/about/screen.png" alt=""/></div>
-                    <div><img src="img/about/screen.png" alt=""/></div>
-                    <div><img src="img/about/screen.png" alt=""/></div>
-                    <div><img src="img/about/screen.png" alt=""/></div>
+                <OwlCarousel    
+                    className="owl-theme"
+                    loop = {true}
+                    margin={10}
+                    dots = {true}
+                    items= {3}                                               
+                >
+                <div className="block2__bottom">
+                    <div><img src="img/about/screen.png" alt=""/></div>                  
                 </div>
+                </OwlCarousel>
             </div>
         </div>
         </section>
