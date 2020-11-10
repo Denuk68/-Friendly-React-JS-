@@ -1,0 +1,305 @@
+/* Section Hero */
+.hero {
+  background-color: #000;
+  padding: 72px 0 0 0;
+}
+.hero__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 750px;
+}
+.hero__body h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  max-width: 540px;
+  margin-bottom: 16px;
+}
+.hero__body p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 540px;
+  margin-bottom: 24px;
+}
+.hero__body button.btn__get {
+  background-color: #9b44ff;
+  height: 50px;
+  width: 196px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+.hero__image img {
+  max-width: 100%;
+}
+
+/* Section block1 */
+.block1__row {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block1__top h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 64px;
+  color: #000;
+  margin-bottom: 80px;
+}
+.block1__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.block1__item {
+  margin-bottom: 30px;
+  flex: 0 1 calc(25% - 100px * 3 / 4);
+}
+.block1__item h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.block1__item p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* Section block2 */
+.block2__row {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block2__top h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 64px;
+  color: #000;
+  margin-bottom: 80px;
+}
+.block2__bottom img {
+  max-width: 70%;
+  margin-left: 17%;
+}
+
+/* Section contact */
+.contact__row {
+  height: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__image {
+  padding-top: 80px;
+  flex: 0 1 50%;
+}
+.contact__body {
+  margin-left: 107px;
+  flex: 0 1 50%;
+}
+.contact__body h2 {
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 800;
+  margin-bottom: 34px;
+}
+.contact__body input {
+  padding: 9px 207px 8px 24px;
+  width: 486px;
+  height: 45px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  cursor: pointer;
+  outline: none;
+}
+.contact__body button {
+  width: 486px;
+  height: 55px;
+  background-color: #8c30f5;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.contact__image img {
+  max-width: 100%;
+}
+
+
+@media (max-width: 992px) {  
+  .hero__body h1 {
+    font-size: 50px;
+  }
+  .hero__body p {
+    font-size: 15px;
+  }
+  .hero__row {
+    height: 500px;
+  }
+  .block1__item {
+    flex: 0 1 50%;
+  }
+  .block1__top h2 {
+    font-size: 30px;
+  }
+  .block1__row {
+    height: auto;
+  }
+  .block2__top h2 {
+    font-size: 30px;
+  }
+  .block2__row {
+    height: auto;
+  }
+  .contact__body input {
+    width: 286px;
+    height: 45px;
+  }
+  .contact__body button {
+    width: 286px;
+    height: 55px;
+  }
+  .contact__row {
+    height: auto;
+  }
+  .contact__body h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) { 
+  .hero__body h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .hero__body p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .hero__body button.btn__get {
+    background-color: #9b44ff;
+    height: 40px;
+    width: 160px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .hero__row {
+    height: 400px;
+  }
+  .block1__row {
+    height: auto;
+  }
+  .block1__top h2 {
+    font-size: 25px;
+  }
+  .block2__row {
+    height: auto;
+  }
+  .block2__top h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .block2__bottom img {
+    max-width: 40%;
+    margin-left: 30%;
+  }
+  .contact__row {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .contact__body h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+  .hero__row {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    height: auto;
+  }
+  .block1__row {
+    height: auto;
+  }
+  .block1__top h2 {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .block1__item {
+    flex: 0 1 100%;
+  }
+  .block2__bottom img {
+    max-width: 70%;
+    margin-left: 17%;
+  }
+  .block2__top h2 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 30px 0;
+  }
+  .contact__row {
+    flex-wrap: wrap;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .contact__body {
+    margin-left: 0;
+  }
+  .contact__body h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contact__image {
+    padding: 20px 0 0 0;
+    flex: 0 1 75%;
+  }
+  .contact__body {
+    flex: 0 1 50%;
+  }
+  .contact__body input,
+  .contact__body button {
+    width: 280px;
+    height: 45px;
+  }
+  .contact__body button {
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .contact__body input {
+    padding: 9px 20px 8px 24px;   
+  }  
+}
+
