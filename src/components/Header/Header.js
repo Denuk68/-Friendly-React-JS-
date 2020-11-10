@@ -1,6 +1,20 @@
 import {React} from 'react';
 import { Link } from "react-router-dom";
 import "./Header.css";
+import $ from 'jquery';
+
+
+// Header burger
+$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger,.header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+    $('.header__link').click(function(event){
+      $('.header__burger,.header__menu').toggleClass('active');
+  });
+  });
+  
 
 export default function Header() {
     return (     
@@ -19,16 +33,16 @@ export default function Header() {
                                 <Link to="" className="header__link">About</Link>
                             </li>
                             <li>
-                                <Link to="" className="header__link">Product</Link>
+                                <Link to="/product" className="header__link">Product</Link>
                             </li>
                             <li>
-                                <Link to="" className="header__link">Pricing</Link>
+                                <Link to="/pricing" className="header__link">Pricing</Link>
                             </li>
                             <li>
-                                <Link to="" className="header__link">Resources</Link>
+                                <Link to="/resources" className="header__link">Resources</Link>
                             </li>
                             <li>
-                                <Link to="" className="header__link">Jobs</Link>
+                                <Link to="/jobs" className="header__link">Jobs</Link>
                             </li>
                         </ul>
                     </nav>
