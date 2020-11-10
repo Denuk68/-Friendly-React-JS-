@@ -4,19 +4,21 @@ import "./Header.css";
 import $ from 'jquery';
 
 
-// Header burger
-$(document).ready(function(){
-    $('.header__burger').click(function(event){
-        $('.header__burger,.header__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-    $('.header__link').click(function(event){
-      $('.header__burger,.header__menu').toggleClass('active');
-  });
-  });
-  
+
 
 export default function Header() {
+
+    // Header burger
+    $(document).ready(function(){
+        $('.header__burger').click(function(event){
+            $('.header__burger,.header__menu').toggleClass('active');
+            $('body').toggleClass('lock');
+        });
+        $('.header__link').click(function(event){
+        $('.header__burger,.header__menu').toggleClass('active');
+        });
+    });
+  
     return (     
         <header className="header">
             <div className="container">
