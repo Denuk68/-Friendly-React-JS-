@@ -32,19 +32,19 @@ export default function Header() {
                     <nav className="header__menu">
                         <ul className="header__list">
                             <li>
-                                <NavLink to="/about" className="header__link" activeStyle={{color: '#9b44ff'}}>About</NavLink>
+                                <NavLink to="/" className="header__link" activeStyle={{color: '#9b44ff'}} exact>About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/product" className="header__link" activeStyle={{color: '#9b44ff'}}>Product</NavLink>
+                                <NavLink to="/product" className="header__link" activeStyle={{color: '#9b44ff'}} exact>Product</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pricing" className="header__link" activeStyle={{color: '#9b44ff'}}>Pricing</NavLink>
+                                <NavLink to="/pricing" className="header__link" activeStyle={{color: '#9b44ff'}} exact>Pricing</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/resources" className="header__link" activeStyle={{color: '#9b44ff'}}>Resources</NavLink>
+                                <NavLink to="/resources" className="header__link" activeStyle={{color: '#9b44ff'}} exact>Resources</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/jobs" className="header__link" activeStyle={{color: '#9b44ff'}}>Jobs</NavLink>
+                                <NavLink to="/jobs" className="header__link" activeStyle={{color: '#9b44ff'}} exact>Jobs</NavLink>
                             </li>
                         </ul>
                     </nav>

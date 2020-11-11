@@ -25,7 +25,7 @@ function App() {
 
           <Switch>
           <Route
-            path="/about"
+            path="/"
             exact
             render = {() => (
               <About />
