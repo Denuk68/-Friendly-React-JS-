@@ -27,8 +27,7 @@
 }
 .hero__body button.btn__get {
   background-color: #9b44ff;
-  height: 50px;
-  width: 196px;
+  padding: 10px 47px;
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
@@ -116,9 +115,7 @@
   margin-bottom: 34px;
 }
 .contact__body input {
-  padding: 9px 207px 8px 24px;
-  width: 486px;
-  height: 45px;
+  padding: 9px 270px 8px 24px;
   background-color: #f9f9f9;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -129,8 +126,7 @@
   outline: none;
 }
 .contact__body button {
-  width: 486px;
-  height: 55px;
+  padding: 13px 221px 12px 221px;
   background-color: #8c30f5;
   border-radius: 8px;
   font-size: 18px;
@@ -171,12 +167,10 @@
     height: auto;
   }
   .contact__body input {
-    width: 286px;
-    height: 45px;
+    padding: 7px 70px 7px 24px;
   }
   .contact__body button {
-    width: 286px;
-    height: 55px;
+    padding: 7px 121px;
   }
   .contact__row {
     height: auto;
@@ -195,15 +189,7 @@
     font-size: 12px;
     line-height: 20px;
   }
-  .hero__body button.btn__get {
-    background-color: #9b44ff;
-    height: 40px;
-    width: 160px;
-    border-radius: 6px;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 400;
-  }
+ 
   .hero__row {
     height: 400px;
   }
@@ -287,19 +273,15 @@
   .contact__body {
     flex: 0 1 50%;
   }
-  .contact__body input,
   .contact__body button {
-    width: 280px;
-    height: 45px;
-  }
-  .contact__body button {
+    padding: 7px 124px;
     border-radius: 6px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
   }
   .contact__body input {
-    padding: 9px 20px 8px 24px;   
+    padding: 8px 69px 8px 24px;
   }  
 }
 
