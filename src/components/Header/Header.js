@@ -1,5 +1,5 @@
 import {React} from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import $ from 'jquery';
 
@@ -32,19 +32,19 @@ export default function Header() {
                     <nav className="header__menu">
                         <ul className="header__list">
                             <li>
-                                <Link to="" className="header__link">About</Link>
+                                <NavLink to="/about" className="header__link" activeStyle={{color: '#9b44ff'}}>About</NavLink>
                             </li>
                             <li>
-                                <Link to="/product" className="header__link">Product</Link>
+                                <NavLink to="/product" className="header__link" activeStyle={{color: '#9b44ff'}}>Product</NavLink>
                             </li>
                             <li>
-                                <Link to="/pricing" className="header__link">Pricing</Link>
+                                <NavLink to="/pricing" className="header__link" activeStyle={{color: '#9b44ff'}}>Pricing</NavLink>
                             </li>
                             <li>
-                                <Link to="/resources" className="header__link">Resources</Link>
+                                <NavLink to="/resources" className="header__link" activeStyle={{color: '#9b44ff'}}>Resources</NavLink>
                             </li>
                             <li>
-                                <Link to="/jobs" className="header__link">Jobs</Link>
+                                <NavLink to="/jobs" className="header__link" activeStyle={{color: '#9b44ff'}}>Jobs</NavLink>
                             </li>
                         </ul>
                     </nav>
